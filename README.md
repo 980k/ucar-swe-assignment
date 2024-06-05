@@ -24,6 +24,22 @@ The **Strategy Pattern** was employed by creating an abstract class named "Param
 The **Factory Pattern** was used to enable the selection of various algorithms based on user preference. At runtime, the corresponding parameterization is created. This design allows new parameterizations to be added to the Factory class for creation. The use of pointers is also abstracted in this design, meaning developers do not need to make explicit calls or handle memory management. The Factory class's method will initialize the relevant object given a valid existing parameterization.
 
 ### Dependency Injection
-**Dependency Injection** was used to decouple concrete implementations, ensuring that changes in parameterization models will not break existing code. This makes it easier for developers to integrate parameterizations into their code bases, as there is an interface that can handle all existing parameterizations. They can easily be swapped out and replaced with a new one if necessary.
+**Dependency Injection** was used to decouple concrete implementations, ensuring that changes in parameterization models will not break existing code. This makes it easier for developers to integrate parameterizations into their code bases, as there is an interface that can handle all existing parameterizations. As a result, parameterization implementations are easily interchangeable.
 
 ## Usage
+1. Navigate to the project:
+    ```
+    cd /path/to/ParameterizationPkg
+    ```
+2. From the top level directory that contains the `CMakeLists.txt` file, create a build directory:
+    ```
+    mkdir build
+    ```
+3. Change directory into `build`:
+    ```
+    cd build/
+    ```
+4. Run `cmake` from the `build` directory:
+    ```
+    cmake ..
+    ```
